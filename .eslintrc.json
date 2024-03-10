@@ -4,7 +4,7 @@
       "es2021": true,
       "jest/globals": true
     },
-    "extends": ["plugin:react/recommended", "standard", "plugin:react-hooks/recommended", "plugin:prettier/recommended"],
+    "extends": ["plugin:react/recommended", "standard", "plugin:react-hooks/recommended", "plugin:prettier/recommended", "prettier"],
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true
@@ -27,7 +27,7 @@
       }
     },
     "rules": {
-      "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
+      "prettier/prettier": ["error", { "printWith": 100}, { "usePrettierrc": true }],
       "semi": [2, "always"],
       "space-before-function-paren": [0, { "anonymous": "always", "named": "always" }],
       "camelcase": 0,
