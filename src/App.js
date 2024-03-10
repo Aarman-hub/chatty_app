@@ -1,8 +1,13 @@
+import { BrowserRouter } from 'react-router-dom';
+import AppRoutes from './routes';
+import './App.scss';
 
 function App() {
   return (
     <>
-      <h1>Hello React</h1>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
     </>
   );
 }
